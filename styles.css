@@ -1,0 +1,91 @@
+body {
+  background-color: black;
+}
+
+.game {
+  align: center;
+  padding: 2px;
+  border-radius: 100px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  color:red;
+  font-size: 65px;
+  font-family: Creepster;
+  text-shadow: 4px 4px #850000;
+  padding-left: 50px;
+  text-decoration: underline red;
+}
+
+.creepster-regular {
+  font-family: "Creepster", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.glowy {
+  background-color: black;
+  border: .5px solid red;
+  border-radius: 80px;
+  color: red;
+  padding: 13px;
+  transition-duration: 0.4s;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  font-family: Creepster;
+  font-size: 50px;
+  text-shadow: 4px 4px #850000
+      }
+
+button:hover {
+   box-shadow: 0 0 30px 0 red,
+              0 0 30px 0 red,
+              0 0 10px 0 red inset;
+}
+
+.bigcontainer{
+  display: flex;
+  width: 50vw;
+  border-bottom: 2px solid red;
+  box-shadow: 0 0 30px 0 red,
+              0 0 30px 0 red,
+              0 0 10px 0 red inset;
+  border-radius: 5px;
+  padding-right: 935px;
+}
+
+.containerA {
+  align: right;
+  //outline: dotted green 5px;
+  padding-right: 100px;
+}
+
+.containerB {
+  //outline: dashed blue 5px;
+  float: right;
+  padding-top: 40px;
+  margin-left: 1300px;
+  width: px;
+}
+h2 {
+  color: red;
+  font-family: Creepster;
+  text-shadow:4px 4px #850000;
+  padding: 15px;
+  font-size: 50px;
+  text-decoration: underline red;
+}
+
+.bigcontainerB {
+  display: flex;
+  width: 50vw;
+  border-bottom: 2px solid red;
+  //box-shadow: 0 0 30px 0 red,
+              0 0 30px 0 red,
+              0 0 10px 0 red inset;
+  border-radius: 5px;
+  padding-right: 935px;
+  padding-top: 50px;
+}
