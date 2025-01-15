@@ -1,7 +1,8 @@
 onst gameLinks = [
-            "https://example-game1.com",
-            "https://example-game2.com",
-            "https://example-game3.com"
+            "https://epicskidmarks.com/?page=1",
+            "https://hexgl.bkcore.com/play/",
+            "https://gorescript.github.io/classic/play/"
+            "https://codeartemis.github.io/TriggerRally/server/public/"
         ];
         
         // Variable to keep track of the current game index
