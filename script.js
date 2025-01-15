@@ -1,4 +1,4 @@
-onst gameLinks = [
+const gameLinks = [
             "https://epicskidmarks.com/?page=1",
             "https://hexgl.bkcore.com/play/",
             "https://gorescript.github.io/classic/play/"
