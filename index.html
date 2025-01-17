@@ -18,7 +18,7 @@
         <div class="containerB">
           <!--<button class="btn"><strong>Switch</strong></button>-->
         <div class="dropdown">
-          <button class="btn">Switch</button>
+          <button class="btn" id="random">Switch</button>
             <div class="dropdown-content">
               <a onclick="switchGame('https://gorescript.github.io/classic/play/')">Gorescript</a>
               <a onclick="switchGame('https://hexgl.bkcore.com/play/')">Hexgl</a>
@@ -54,6 +54,38 @@
             const gameFrame = document.getElementById('gameFrame');
             gameFrame.src = url; // Change the source of the iframe
         }
+        const games = [
+            "https://gorescript.github.io/classic/play/",
+            "https://hexgl.bkcore.com/play/",
+            "https://codeartemis.github.io/TriggerRally/server/public/",
+            "https://epicskidmarks.com/?page=1",
+            "https://superliquidsoccer.gitlab.io/file/",
+            "https://scienceedu14.github.io/g/class-809",
+            "https://scienceedu14.github.io/g/class-505",
+            "https://scienceedu14.github.io/g5/class-543",
+            "https://scienceedu14.github.io/g3/class-725",
+            "https://scienceedu14.github.io/g2/class-626",
+            "https://scienceedu14.github.io/g72/class-625",
+            "https://scienceedu14.github.io/g177/class-339",
+            "https://superliquidsoccer.gitlab.io/go/class-505.html"
+        ];
+
+        // Function to randomly load a game
+        function loadRandomGame() {
+            const randomIndex = Math.floor(Math.random() * games.length); // Generate a random index
+            const randomGame = games[randomIndex]; // Get the URL at that index
+            window.location.href = randomGame; // Redirect to the random game's URL
+        }
+
+        // Attach the function to the button's click event
+        //document.getElementById("random").addEventListener("click", loadRandomGame);
+        
+        document.getElementById("random").addEventListener("click", function() {
+    const randomIndex = Math.floor(Math.random() * games.length);
+    const randomGame = games[randomIndex];
+    document.getElementById("gameFrame").src = randomGame; // Updates iframe src
+});
+
     </script>
   </body>
 </html>
