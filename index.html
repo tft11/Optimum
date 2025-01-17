@@ -7,29 +7,53 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-</style>
-  <div class="bigcontainer">
-    <div class="containerA">
-      <h1>Optimum</h1>
+    
+      <div class="bigcontainer">
+        <div class="containerA">
+          <h1 onclick="https://epicskidmarks.com/?page=1">Optimum+</h1>
+        </div>
+        <div class="containerB">
+          <!--<button class="btn"><strong>Switch</strong></button>-->
+        <div class="dropdown">
+          <button class="btn"><strong>Switch</strong></button>
+            <div class="dropdown-content">
+              <a onclick="switchGame('https://gorescript.github.io/classic/play/')">Gorescript</a>
+              <a onclick="switchGame('https://hexgl.bkcore.com/play/')">Hexgl</a>
+              <a onclick="switchGame('https://codeartemis.github.io/TriggerRally/server/public/')">Trigger rally</a>
+              <a onclick="switchGame('https://epicskidmarks.com/?page=1')">Epic skidmarks</a>
+              <a onclick="switchGame('https://superliquidsoccer.gitlab.io/file/')">Super liquid soccer</a>
+              <a onclick="switchGame('https://scienceedu14.github.io/g/class-809')">Vex 6</a>
+              <a onclick="switchGame('https://scienceedu14.github.io/g/class-505')">Paper.io 2</a>
+              <a onclick="switchGame('https://scienceedu14.github.io/g5/class-543')">Parkour racing</a>
+              <a onclick="switchGame('https://scienceedu14.github.io/g3/class-725')">Night Thief</a>
+              <a onclick="switchGame('https://scienceedu14.github.io/g2/class-626')">Real Cars in City</a>
+              <a onclick="switchGame('https://scienceedu14.github.io/g72/class-625')">Highway Traffic 3d</a>
+              <a onclick="switchGame('https://scienceedu14.github.io/g177/class-339')">Fox sim 3d</a>
+              <a onclick="switchGame('https://superliquidsoccer.gitlab.io/go/class-505.html')">source</a>
+            </div>
+          </div>
+      </div>
     </div>
-    <div class="containerB">
-      <button type="button" href="games.html" id="switchButton" class="glowy">Switch</button>
+  <center>
+      <br></br>
+    <!-- Placeholder for the embedded game -->
+    <iframe id="gameFrame" class="gameScreen" src="https://epicskidmarks.com/?page=1" width="1000" height="500" style="border: 1px solid black;"></iframe>
+    <div class="aboutContainer">
+      <h2>About Optimum</h2>
+      <p><strong>Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah</strong></p>
     </div>
-  </div>
-<center>
-  <h2>Epic skidmarks</h2>
-  <div id="gameFrame"></div>
-  <embed class="game" src="https://epicskidmarks.com/?page=1" width="1000" height="500">
-  <!--<embed class="game" src="https://hexgl.bkcore.com/play/" width="1000" height="500">
-  <embed class="game" src="https://gorescript.github.io/classic/play/" width="1000" height="500">
-    https://codeartemis.github.io/TriggerRally/server/public/-->
-</center>
-  <div class="bigcontainerB">
-    <div class="containerC">
-      <h3>Optimum</h3>
-    </div>
-  </div>
-<script src="script.js"></script>
-</body>
+    <br><br>
+  <p1>&copy Copyright Optimum 2025</p1>
+  </center>
+    <script>
+        // Function to switch the embedded game link
+        function switchGame(url) {
+            const gameFrame = document.getElementById('gameFrame');
+            gameFrame.src = url; // Change the source of the iframe
+        }
+    </script>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Quicksand:wght@300..700&display=swap');
+      </style>
+  </body>
+</html>
