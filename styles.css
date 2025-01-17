@@ -2,90 +2,169 @@ body {
   background-color: black;
 }
 
-.game {
-  align: center;
-  padding: 2px;
-  border-radius: 100px;
-  padding-bottom: 50px;
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-h1 {
-  color:red;
-  font-size: 65px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-align: center;
+  background-color: crimson;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: black;
+  color: crimson;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  border-style: outset;
+  transition-duration: 0.4s;
+  font-family: Quicksand;
+  border-color: crimson;
+}
+
+.btn:hover {
+   box-shadow: 0 0 30px 0 crimson inset,
+              0 0 30px 0 crimson inset,
+              0 0 10px 0 crimson inset;
+   color: black;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: crimson;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #9c112d;
+  transition-duration: 0.4s;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: 10px;
+}
+
+.btn:hover, .dropdown:hover .btn {
+  background-color: #9c112d;
+}
+
+.btn:active {
+  border-style: inset;
+  border-color: crimson;
+}
+
+/* title */
+h1{
+  color: crimson;
   font-family: Creepster;
-  text-shadow: 4px 4px #850000;
-  padding-left: 50px;
-  text-decoration: underline red;
+  font-size: 75px;
+  text-shadow: 4px 4px #9c112d;
+  text-decoration: underline;
 }
 
+/*dropdown options text css*/
+a {
+  font-family: Quicksand;
+  color: white;
+}
+
+/* creepster font*/
 .creepster-regular {
   font-family: "Creepster", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.glowy {
-  background-color: black;
-  border: .5px solid red;
-  border-radius: 80px;
-  color: red;
-  padding: 13px;
-  transition-duration: 0.4s;
-  margin: auto;
-  display: flex;
-  text-align: center;
-  font-family: Creepster;
-  font-size: 50px;
-  text-shadow: 4px 4px #850000
-      }
-
-button:hover {
-   box-shadow: 0 0 30px 0 red,
-              0 0 30px 0 red,
-              0 0 10px 0 red inset;
-}
-
 .bigcontainer{
   display: flex;
   width: 50vw;
-  border-bottom: 2px solid red;
-  box-shadow: 0 0 30px 0 red,
-              0 0 30px 0 red,
-              0 0 10px 0 red inset;
+  border-bottom: 2px solid crimson;
+  box-shadow: 0 0 30px 0 crimson,
+              0 0 30px 0 crimson,
+              0 0 10px 0 crimson inset;
   border-radius: 5px;
   padding-right: 935px;
 }
 
 .containerA {
-  align: right;
-  //outline: dotted green 5px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 1350px;
+}
+
+.gameScreen {
+  border-radius: 25px;
+  box-shadow: 0 0 30px 0 crimson,
+              0 0 30px 0 crimson,
+              0 0 10px 0 crimson inset;
+  background-color: crimson;
 }
 
 .containerB {
-  //outline: dashed blue 5px;
-  float: right;
-  padding-top: 40px;
-  margin-left: 1300px;
-  width: px;
-}
-h2 {
-  color: red;
-  font-family: Creepster;
-  text-shadow:4px 4px #850000;
-  padding: 15px;
-  font-size: 50px;
-  text-decoration: underline red;
+  padding-top: 65px;
 }
 
-.bigcontainerB {
-  display: flex;
-  width: 50vw;
-  border-bottom: 2px solid red;
-  //box-shadow: 0 0 30px 0 red,
-              0 0 30px 0 red,
-              0 0 10px 0 red inset;
-  border-radius: 5px;
-  padding-right: 935px;
-  padding-top: 50px;
+h2 {
+  color: crimson;
+  font-family: Creepster;
+  text-decoration: underline;
+  text-shadow: 4px 4px #9c112d;
+  font-size: 40px
 }
+
+p {
+  color: crimson;
+  font-family: Quicksand;
+  padding: 20px;
+}
+
+p1 {
+  color: crimson;
+  font-family: Quicksand;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700
+
+.quicksand-<uniquifier> {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.aboutContainer {
+  padding: 50px;
+}
+
+/* copyright 2025 TFT11 */
